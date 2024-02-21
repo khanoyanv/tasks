@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    flex-wrap: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.navbar a {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: blueviolet;
+    font-size: 24px;
+    transition: 0.2s;
+
+}
+
+.navbar a:hover {
+    background-color: aqua;
+}
+
+.section_container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin-top: 100px;
+    gap: 5%;
+}
+
+.section {
+    width: 500px;
+    height: 200px;
+}
