@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content Change</title>
+</head>
+<body>
+    <button id="buttonId">Change Text</button>
+    <p id="pId">Some Text</p>
+</body>
+
+<script>
+    let button = document.getElementById("buttonId");
+    let paragraph = document.getElementById("pId");
+
+    button.addEventListener('click', () => {
+        paragraph.textContent = "Text Changed";
+    }
+)
+</script>
+</html>
