@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="buttonId">
+        Hide
+    </button>
+    <div id="containerId" class="container">
+        Some Text
+    </div>
+</body>
+<script>
+    let button = document.getElementById("buttonId");
+    let container = document.getElementById("containerId");
+
+    button.addEventListener('click', () => {
+        button.innerText == "Hide" ? button.innerText = 'Show' : button.innerText = 'Hide';
+        button.innerText == "Hide" ? container.style.display = 'none' : container.style.display = 'block';
+    })
+</script>
+</html>
