@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Display User Input</title>
+</head>
+<body>
+    <div>
+        <input id="userInput" class="input_user" type="text" placeholder="Type something...">
+        <label id="displayButton" class="input_user_label">Display</label>
+    </div>
+    <p id="displayParagraph"></p>
+</body>
+
+<script>
+    let button = document.getElementById('displayButton');
+    let input = document.getElementById('userInput');
+    let paragraph = document.getElementById('displayParagraph');
+
+    let displayText = () => {
+        paragraph.innerText = input.value;
+    }
+
+    button.addEventListener('click', displayText);
+</script>
+</html>

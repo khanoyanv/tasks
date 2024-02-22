@@ -1,0 +1,9 @@
+.input_user_label {
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input_user_label:hover {
+    background-color: antiquewhite;
+}
