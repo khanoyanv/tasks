@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Email</title>
+</head>
+<body>
+    <form>
+        <input id="inputEmail" type="email">
+        <button id="submitButton">Submit</button>
+    </form>
+</body>
+<script>
+    let button = document.getElementById('submitButton');
+    let input = document.getElementById('inputEmail');
+
+    let isValidEmail = () => {
+        if(!(input.value.length)) {
+            alert("Please enter an email address");
+        }
+    }
+    button.addEventListener('click', isValidEmail);
+
+</script>
+</html>
