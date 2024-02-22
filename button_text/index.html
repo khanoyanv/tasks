@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id="buttonId">
+        Hello
+    </button>
+</body>
+<script>
+    let button = document.getElementById("buttonId");
+
+    button.addEventListener('click', () => {
+        button.innerText == "Hello" ? button.innerText = 'Goodbye' : button.innerText = 'Hello';
+    })
+</script>
+</html>
